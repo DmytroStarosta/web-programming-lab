@@ -1,0 +1,149 @@
+.header {
+    width: 1251.58px;
+    margin-top: 63px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1251.58px;
+    margin-top: 63px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: left;
+}
+
+.circle {
+    display: flex;
+    justify-self: end;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(31, 21, 52, 1);
+}
+
+.nav-item-black {
+    display: block;
+    margin-left: 30px;
+    color: rgba(31, 21, 52, 1);
+}
+
+.nav-item {
+    display: block;
+    margin-left: 30px;
+    opacity: 50%;
+}
+
+.top-nav {
+    display: flex;
+    position: left;
+    margin-left: 1px;
+    width: 541.7px;
+    height: 17.14px;
+}
+
+.nav-hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.hamburger-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-img:focus {
+    outline: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.header-logo {
+    color: rgba(35, 51, 72, 1);
+}
+
+.header-circle {
+    background-color: rgba(69, 143, 246, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.combined-mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 503px;
+    margin-left: 30px;
+}
+
+.mobile-apps-cointainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 73px;
+    padding: 30px;
+    margin-top: 202px;
+    width: 360.75px;
+    height: 400px;
+}
+
+.header-title {
+    width: 241.66px;
+    height: 82.27px;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.download-vector {
+    margin-left: 12px;
+}
+
+.header-txt {
+    width: 360.14px;
+    height: 107px;
+    margin-top: 28px;
+    font-weight: 1700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    line-height: 1.5;
+    overflow: hidden;
+    opacity: 50%;
+}
+
+img {
+    margin-left: 60px;
+    margin-right: 25px;
+    margin-top: 199px;
+    width: 665px;
+    height: 434px;
+}
+
+.dot-el-h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.nav-hamburger {
+    display: none;
+    width: 100px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+}

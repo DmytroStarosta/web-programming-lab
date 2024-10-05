@@ -1,0 +1,129 @@
+.middle-section {
+    width: 1250px;
+    height: 822px;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+.latest-article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -80px;
+}
+
+.dot-el-m-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -72px;
+    justify-content: flex-start;
+}
+
+.main-box {
+    width: 300px;
+    height: 445px;
+    border-radius: 12%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 20px 50px 0px rgba(229, 233, 246, 0.4);
+    z-index: 1;
+}
+
+.main-box-1 {
+    margin-left: 70px;
+}
+
+.main-box-2 {
+    margin-left: 50px;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 190px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.img-box-1 {
+    background-image: url("Blood test.png");
+}
+
+.img-box-2 {
+    background-image: url("microscope.png");
+}
+
+.img-box-3 {
+    background-image: url("beauty mask.png");
+}
+
+.txt-box-title {
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.box-txt {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 50px;
+    color: rgba(125, 121, 135, 1);
+    margin-left: 15px;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    width: 150px;
+    height: 12.63px;
+    margin-top: 40px;
+    margin-left: 15px;
+    font-weight: 400;
+    color: rgba(64, 137, 237, 1);
+    background-color: transparent;
+}
+
+.right-vector {
+    width: 15px;
+    height: 9px;
+}
+
+.middle-button-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 40px;
+    padding-left: 450px;
+}
+
+.spot-img {
+    display: flex;
+    justify-content: end;
+    transform: rotate(159.84deg)
+}
+
+.spot-img {
+    position: absolute;
+    width: 350px;
+    left: 1000px;
+    top: 900px;
+    opacity: 0.6;
+    transform: rotate(0deg);
+}
