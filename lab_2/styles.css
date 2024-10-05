@@ -1,0 +1,13 @@
+@import "./normalize.min.css";
+
+@import "./globals.css";
+
+@import"./header.css";
+
+@import"./middle.css";
+
+@import "./end.css";
+
+@import "./footer.css";
+
+@import "./adaptive.css";

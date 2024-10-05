@@ -1,0 +1,358 @@
+.header {
+    width: 1251.58px;
+    margin-top: 63px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1251.58px;
+    margin-top: 63px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: left;
+}
+
+.circle {
+    display: flex;
+    justify-self: end;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(31, 21, 52, 1);
+}
+
+.nav-item-black {
+    display: block;
+    margin-left: 30px;
+    color: rgba(31, 21, 52, 1);
+}
+
+.nav-item {
+    display: block;
+    margin-left: 30px;
+    opacity: 50%;
+}
+
+.top-nav {
+    display: flex;
+    position: left;
+    margin-left: 1px;
+    width: 541.7px;
+    height: 17.14px;
+}
+
+.nav-hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.hamburger-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-img:focus {
+    outline: none;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.header-logo {
+    color: rgba(35, 51, 72, 1);
+}
+
+.header-circle {
+    background-color: rgba(69, 143, 246, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.combined-mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 503px;
+    margin-left: 30px;
+}
+
+.mobile-apps-cointainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 73px;
+    padding: 30px;
+    margin-top: 202px;
+    width: 360.75px;
+    height: 400px;
+}
+
+.header-title {
+    width: 241.66px;
+    height: 82.27px;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.download-vector {
+    margin-left: 12px;
+}
+
+.header-txt {
+    width: 360.14px;
+    height: 107px;
+    margin-top: 28px;
+    font-weight: 1700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    line-height: 1.5;
+    overflow: hidden;
+    opacity: 50%;
+}
+
+img {
+    margin-left: 60px;
+    margin-right: 25px;
+    margin-top: 199px;
+    width: 665px;
+    height: 434px;
+}
+
+.dot-el-h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.nav-hamburger {
+    display: none;
+    width: 100px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        position: relative;
+        width: 320px;
+        align-items: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: white;
+        max-width: 320px;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        margin-top: -350px;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+
+    .nav-margin {
+        margin-bottom: 40px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -30px;
+        height: 100%;
+        padding: 0;
+    }
+
+    .logo-container {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 300px;
+        z-index: 100;
+    }
+
+    .combined-mobile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 350px;
+    }
+
+    .mobile-apps-cointainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        margin-left: 0 auto;
+        margin-top: -35px;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .header-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .rectangle {
+        display: block;
+        align-items: center;
+    }
+
+    .header-txt {
+        font-size: 17px;
+        width: auto;
+        align-items: center;
+        text-align: justify;
+        width: 80%;
+        height: fit-content;
+        opacity: 70%;
+    }
+
+    img {
+        display: none;
+    }
+
+    .dot-el-h-container {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: block;
+        margin-top: 100px;
+        margin-left: -300px;
+    }
+
+    .header-nav {
+        display: flex;
+        background: rgba(243, 248, 254, 1);
+        position: fixed;
+        width: 100vw;
+        top: 85px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top left);
+        transition: clip-path 0.9s ease-in;
+        z-index: 2;
+    }
+
+    .header-nav.open {
+        clip-path: circle(650px at left top);
+        z-index: 3;
+    }
+
+    .header-nav .nav-item-black .nav-item {
+        margin-right: -10px;
+        padding-top: 10hv;
+        flex: 1;
+    }
+}
+
+/* -----For 2560px screen------- */
+
+@media screen and (min-width: 2560px) {
+    .header {
+        position: relative;
+        width: 2560px;
+        height: 1000px;
+        align-items: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: white;
+        max-width: 2560px;
+        margin: 40px;
+    }
+
+    .nav-container {
+        display: flex;
+        width: 90%;
+        height: 70px;
+        font-size: 40px;
+    }
+
+    .nav-margin {
+        padding-right: 170px;
+        width: 600px;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .combined-mobile-container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 2560px;
+        height: 800px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .mobile-apps-cointainer {
+        width: 1300px;
+        display: flex;
+        justify-content: center;
+        height: 800px;
+        margin-left: 0 auto;
+        padding: 0;
+        margin-left: 70px;
+    }
+
+    .header-title {
+        width: 500px;
+        font-size: 70px;
+        margin-bottom: 130px;
+    }
+
+    .header-txt {
+        width: 850px;
+        height: 600px;
+        font-size: 40px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    img {
+        width: 1500px;
+        height: auto;
+    }
+
+}
