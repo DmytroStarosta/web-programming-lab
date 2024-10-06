@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Create tree</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='create_page.css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__navbar">
+            <div class="header__logo">My shop</div>
+            <nav class="header__nav">
+                <a href="lab_4.html" class="header__link">My Christmas trees</a>
+                <a href="create_page.html" class="header__link open">Create tree</a>
+                <a href="edit_page.html" class="header__link">Edit tree</a>
+            </nav>
+        </div>
+    </header>
+    <div class="all">
+        <h1>Create tree</h1>
+        <form class="form" id="form">
+            <div class="form-group">
+                <label for="title-create">Title</label>
+                <input type="text" id="title-create" placeholder="Text here..." class="form_elements">
+            </div>
+            <div class="form-group">
+                <label for="manufacturer-create">Manufacturer</label>
+                <input type="text" id="manufacturer-create" class="form_elements">
+            </div>
+            <div class="form-group">
+                <label for="material-create">Material</label>
+                <select id="material-create" class="form_elements">
+                    <option value="" disabled selected>Select material</option>
+                    <option>PVC</option>
+                    <option>Fir wood and synthetic</option>
+                    <option>Plastic and fabric</option>
+                    <option>PE and PVC blend</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description-create">Description</label>
+                <textarea id="description-create" class="form_elements"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price-create">Price, $</label>
+                <input type="number" id="price-create" class="form_elements" min="0" step="0.01">
+            </div>
+            <input type="submit" id="sumbit-button" value="Submit">
+        </form>
+    </div>
+    <script src='pages.js'></script>
+</body>
+
+</html>
