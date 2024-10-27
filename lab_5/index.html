@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Christmas tree shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__navbar">
+            <div class="header__logo">My shop</div>
+            <nav class="header__nav">
+                <a href="lab_4.html" class="header__link open" id="shop-link"> My Christmas trees</a>
+                <a href="create_page.html" class="header__link" id="create-link">Create tree</a>
+                <a href="edit_page.html" class="header__link" id="edit-link">Edit tree</a>
+            </nav>
+            <div class="header__search-bar">
+                <input type="text" class="header__input" placeholder="Type something..." id="search-input">
+                <button class="header__button--search" id="search-button" onclick="searchElements()">Search</button>
+                <button class="header__button header__button--clear" id="clear-button" onclick="clearButton()">Clear</button>
+            </div>    
+        </div>
+    </header>
+    <section class="main">
+        <aside class="sidebar">
+            <h2>Manage Trees</h2>
+            <div class="sort-section">
+                <label for="price-slider">Sort by the most expensive trees</label>
+                <label class="switch-box">
+                    <input type="checkbox" class="checkbox" id="myCheckbox1" onclick="sortElements()" />
+                    <span class="slider-2">
+                        <span class="slider-handle"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="divider"></div>
+            <h3>Count total amount:</h3>
+            <button id="count-button" onclick="countPrice()">Count</button>
+            <h4>Total expenses: <span id="total-expenses">0</span>$</h4>
+        </aside>    
+    
+        <div class="box-container" id="elements_id"></div>
+    </section>
+    <script type="module" src="pages.js"></script>
+    <script  src="script.js"></script>
+</body>
+</html>
