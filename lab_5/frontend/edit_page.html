@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Edit tree</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="/frontend/css/edit_page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__navbar">
+            <div class="header__logo">My shop</div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__link">My Christmas trees</a>
+                <a href="create_page.html" class="header__link">Create tree</a>
+                <a href="edit_page.html" class="header__link open">Edit tree</a>
+            </nav>
+        </div>
+    </header>
+    <div class="all">
+        <h1>Edit tree</h1>
+        <form class="form" id="form">
+            <div class="form-group">
+                <label for="title-edit">Title</label>
+                <input type="text" id="title-edit" placeholder="Text here..." class="form_elements">
+            </div>
+            <div class="form-group">
+                <label for="manufacturer-edit">Manufacturer</label>
+                <input type="text" id="manufacturer-edit" class="form_elements">
+            </div>
+            <div class="form-group">
+                <label for="material-edit">Material</label>
+                <select id="material-edit" class="form_elements">
+                    <option value="" disabled selected>Select material</option>
+                    <option>PVC</option>
+                    <option>Fir wood and synthetic</option>
+                    <option>Plastic and fabric</option>
+                    <option>PE and PVC blend</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description-edit">Description</label>
+                <textarea id="description-edit" class="form_elements"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price-edit">Price, $</label>
+                <input type="number" id="price-edit" class="form_elements" min="0" step="0.01">
+            </div>
+            <input type="submit" class="sumbit-button" id="edit-button" value="Submit">
+        </form>  
+    </div>
+    <script type="module" src="/frontend/js/edit_page.js"></script>
+</body>
+
+</html>
