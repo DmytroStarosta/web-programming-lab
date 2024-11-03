@@ -1,0 +1,80 @@
+.main__section {
+    width: 90%;
+    height: auto;
+    padding: 3%;
+    margin: auto;
+}
+
+.main__top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main__top img {
+    width: 40%;
+    height: auto;
+}
+
+.main__top-txt {
+    margin-left: 10%;
+}
+
+.main__top h1 {
+    font-size: 45px;
+}
+
+.main__top p {
+    width: 90%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.element__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
+.element {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 25%;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+.element__img {
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    background-image: url(https://st2.depositphotos.com/1177973/6101/i/450/depositphotos_61011139-stock-photo-decorated-christmas-tree.jpg);
+}
+
+.element__txt p {
+    text-align: justify;
+}
+
+.button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all__button {
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    border: solid;
+    background-color: #4c4c4c;
+    font-weight: 600;
+    width: 10%;
+    height: 40px;
+}
