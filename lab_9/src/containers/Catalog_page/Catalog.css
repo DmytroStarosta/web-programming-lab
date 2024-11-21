@@ -1,0 +1,77 @@
+.apply__button {
+    margin: 0 auto 0 0;
+    border-radius: 8px;
+    color: #000000;
+    border: 2px solid;
+    background-color: transparent;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.filter__box {
+    display: flex;
+    gap: 10px;
+}
+
+.catalog__filter {
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.a-list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.view-all-button-1{
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    border: solid;
+    background-color: #4c4c4c;
+    font-weight: 600;
+    width: 10%;
+    height: 40px;
+}
+
+.view-all__button-2 {
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    border: solid;
+    background-color: #4c4c4c;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+}
+
+.element-2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 270px;
+    height: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+    padding: 4%;
+}
+
+.element__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0.5%;
+}

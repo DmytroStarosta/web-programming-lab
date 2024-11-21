@@ -1,0 +1,165 @@
+.main__section {
+    width: 90%;
+    height: auto;
+    padding: 3%;
+    margin: auto;
+}
+
+.main__top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main__top img {
+    width: 40%;
+    height: auto;
+}
+
+.main__top-txt {
+    margin-left: 10%;
+}
+
+.main__top h1 {
+    font-size: 45px;
+}
+
+.main__top p {
+    width: 90%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.element__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
+.element {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    height: 450px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1%;
+    padding: 2%;
+}
+
+.element__img {
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    background-image: url(https://st2.depositphotos.com/1177973/6101/i/450/depositphotos_61011139-stock-photo-decorated-christmas-tree.jpg);
+}
+
+.element__txt p {
+    text-align: justify;
+}
+
+.button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_sleep{
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    border: solid;
+    background-color: #4c4c4c;
+    font-weight: 600;
+    width: 10%;
+    height: 40px;
+}
+
+.button_sleep::before {
+    content: View more;
+}
+
+.button_sleep::after {
+    content: Go back;
+}
+
+.view-all-button {
+    margin: 0 auto;
+    border-radius: 8px;
+    color: white;
+    border: solid;
+    background-color: #4c4c4c;
+    font-weight: 600;
+    width: 10%;
+    height: 40px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.number__txt {
+    border: 1px solid rgb(163, 162, 145);
+    background-color: #4c4c4c;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+.material__container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.material__container h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.price__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.price__container h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.color__container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.color__container h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.price__container p {
+    margin: 0;
+    text-align: right;
+}
+
+.el-button_container {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
