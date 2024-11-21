@@ -1,0 +1,250 @@
+/*<!--const toggleView = () => {
+        setShowAll(prevShowAll => !prevShowAll);
+    };
+
+    return (
+        <div className="main__section">
+            <div className="main__top">
+                <img src="https://merry-christmas.com.ua/wp-content/themes/tree/images/elka.png" alt="Christmas Tree" />
+                <div className="main__top-txt">
+                    <h1>Christmas tree shop</h1>
+                    <p>Welcome to our online Christmas tree store! We offer a wide selection of real and artificial trees in various sizes and styles, as well as decorations to create a unique festive atmosphere. Here, you will find high-quality trees that will bring warmth to your home. Order online and enjoy fast delivery right to your doorstep!</p>
+                </div>
+            </div>
+            <div className="main__bottom">
+                <div className="element__container">
+                    {(showAll ? products : products.slice(0, 3)).map((product) => (
+                        <ProductCard 
+                            key={product.id}
+                            name={product.name}
+                            description={product.description}
+                            showButton={false}
+                            className="element"
+                        />
+                    ))}
+                </div>
+                <div className="button__container">
+                    <Button 
+                        className="view-all__button" 
+                        onClick={toggleView}
+                    >
+                        {showAll ? "Show Less" : "View More"}
+                    </Button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Home;
+
+
+
+import React, { useState } from "react";
+
+function SearchInput({ onSearch }) {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearch = (event) => {
+        const value = event.target.value;
+        setSearchTerm(value);
+        onSearch(value);
+    };
+
+    return (
+        <input
+            type="text"
+            className="search-bar__input"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearch}
+        />
+    );
+}
+
+export default SearchInput;-->*/
+
+//---------------------------------------------------------------------------------------------------
+   /* const [filteredProducts, setFilteredProducts] = useState(products);
+
+    useEffect(() => {
+        const filtered = products.filter((product) =>
+            product.name.toLowerCase().includes(searchName.toLowerCase())
+        );
+        setFilteredProducts(filtered);
+        console.log("Filtered Products:", filtered);
+    }, [searchName, products]);
+    console.log("Result:", filteredProducts)
+    return (
+        <ProductContext.Provider value={{ filteredProducts, setSearchName }}>
+            {children}
+        </ProductContext.Provider>
+    );
+};*/
+
+/* -----------------------------ProductContext----------------------------------*/
+/*import React, { createContext, useState } from 'react';
+
+export const ProductContext = createContext();
+
+export const ProductProvider = ({ children }) => {
+    const [searchName, setSearchName] = useState('');
+
+
+
+    
+    const [products, setProducts] = useState([
+        { 
+            id: 1,
+            number: "Item 1",
+            name: "Winter Bliss", 
+            material: "PVC",
+            color: "green",
+            description: "A traditional 8-foot fir tree that offers a full silhouette and authentic look, ideal for both indoor and outdoor decorations.", 
+            price: "$ 100" 
+        },
+        { 
+            id: 2,
+            number: "Item 2", 
+            name: "Snowy Elegance", 
+            material: "Tinsel",
+            color: "lightgreen",
+            description: "A stunning 7-foot tall Christmas tree with realistic foliage and easy-to-assemble branches, perfect for creating a festive atmosphere.", 
+            price: "$ 534" 
+        },
+        { 
+            id: 3,
+            name: "Classic Fir",
+            number: "Item 3",
+            material: "PE",
+            color: "green",
+            description: "This 6.5-foot tree features snow-dusted branches and comes pre-lit with adding a magical touch to your holiday decor.",
+            price: "$ 432" 
+        },
+        {
+            id: 4,
+            number: "Item 4",
+            name: "Rustic Cedar",
+            material: "PVC",
+            color: "green",
+            description: "An 8-foot rustic cedar tree, featuring lifelike branches and a natural look that brings the beauty of the outdoors inside.",
+            price: "$ 259"
+        },
+    ]);
+    
+    const [filters, setFilters] = useState({ material: "",color: "", priceRange: "" });
+
+    const handleFilterChange = (filterName, value) => {
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [filterName]: value,
+        }));
+    };
+
+    const checkPriceRange = (price, priceRange) => {
+        const numericPrice = parseInt(price.replace(/[^0-9]/g, ""), 10);
+        if (priceRange === "0-299 $") return numericPrice >= 0 && numericPrice <= 299;
+        if (priceRange === "300-599 $") return numericPrice >= 300 && numericPrice <= 599;
+        if (priceRange === "600-999 $") return numericPrice >= 600 && numericPrice <= 999;
+        return false;
+    };
+
+    const filteredProducts = products.filter((product) => {
+        const isMaterialMatch = filters.material ? product.material === filters.material : true;
+        const isColorMatch = filters.color ? product.color === filters.color : true;
+        const isPriceMatch = filters.priceRange ? checkPriceRange(product.price, filters.priceRange) : true;
+        return isMaterialMatch && isPriceMatch && isColorMatch;
+    });
+
+    return (
+        <ProductContext.Provider value={{ products, setProducts, searchName, setSearchName, filteredProducts, handleFilterChange }}>
+            {children}
+        </ProductContext.Provider>
+    );
+};*/
+
+// ---------------------------------ProductList---------------------------
+/*
+import React, { useContext } from "react";
+import ProductCard from "../Home/ProductCard";
+import "./Catalog.css";
+import { ProductContext } from "../Context/ProductContext";
+
+function ProductList() {
+    const { filteredProducts } = useContext(ProductContext);
+    
+
+    return (
+        <div className="a-list">
+            {filteredProducts.map((product) => (
+                <div className="element__container" key={product.id}>
+                    <ProductCard
+                        id={product.id}
+                        number={product.number}
+                        imageUrl={product.imageUrl}
+                        name={product.name}
+                        material={product.material}
+                        color={product.color}
+                        description={product.description}
+                        price={product.price}
+                        showMaterial={true}
+                        showColor={true}
+                        showButton={true}
+                        showNumber={true}
+                        showPrice={true}
+                        className="element-2"
+                    />
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default ProductList;
+*/  
+
+//---------------------------header-------------------------
+/*
+import React, { useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Logo from "../Logo";
+import "./header.css";
+import { ProductContext } from "../../Context/ProductContext";
+
+function Header({ headerClass }) {
+    const location = useLocation();
+    const { setSearchName } = useContext(ProductContext);
+
+    const handleChange = (event) => {
+        setSearchName(event.target.value);
+        
+    };
+
+    return (
+        <header className={headerClass}>
+            <Logo className="header__logo" />
+            <nav className="header__nav">
+                <ul className="header__nav-list">
+                    <li><Link to="/" className="header__nav-link">Home</Link></li>
+                    <li><Link to="/catalog" className="header__nav-link">Catalog</Link></li>
+                    <li><Link to="/cart" className="header__nav-link">Cart</Link></li>
+                </ul>
+            </nav>
+            {location.pathname === "/catalog" && (
+                <input
+                    type="text"
+                    className="header__search-input"
+                    placeholder="Search..."
+                    onChange={handleChange}
+                />
+            )}
+        </header>
+    );
+}
+
+export default Header;
+*/
+
+//---------------
+
+
