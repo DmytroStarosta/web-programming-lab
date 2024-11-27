@@ -4,8 +4,8 @@ import './Catalog.css';
 function Filter({ filterName, options, onChange }) {
     return (
         <div>
-            <select className="catalog__filter" name={filterName} onChange={(e) => onChange(e.target.value)}>
-                <option value="" disabled selected>
+            <select className="catalog__filter" name={filterName} onChange={(e) => onChange(e.target.value)} defaultValue="">
+                <option value="" disabled>
                     {filterName}
                 </option>
                 {options.map((option, index) => (

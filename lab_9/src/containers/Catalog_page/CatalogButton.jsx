@@ -1,9 +1,12 @@
-import React from 'react';
-import './Catalog.css'
+import React, { useContext } from 'react';
+import './Catalog.css';
+import { ProductContext } from '../Context/ProductContext';
 
 const CatalogButton = () => {
+    const { applyFilters } = useContext(ProductContext);
+
     const handleClick = () => {
-        alert('Button clicked!');
+        applyFilters();
     };
 
     return (

@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import ProductCard from "../Home/ProductCard";
 import "./Catalog.css";
 import { ProductContext } from "../Context/ProductContext";
-import Loader from "../Loader/Loader"; // Import the Loader component
+import Loader from "../Loader/Loader";
 
 function ProductList() {
     const { filteredProducts, loading } = useContext(ProductContext);
@@ -14,7 +14,7 @@ function ProductList() {
         } else {
             const timeout = setTimeout(() => {
                 setShowLoader(false);
-            }, 2000);
+            }, 500);
             return () => clearTimeout(timeout);
         }
     }, [loading]);
