@@ -40,7 +40,7 @@ app.get('/trees', (req, res) => {
     params.push(Number(priceMax));
   }
 
-  console.log("SQL Query: ", sql)
+  console.log("SQL Query: ", sql);
   console.log("SQL Parameters: ", params);
 
   db.query(sql, params, (error, results) => {
@@ -50,11 +50,11 @@ app.get('/trees', (req, res) => {
     }
     console.log("Fetched Data from DB: ", results);
 
-    res.status(200).json(JSON.parse(JSON.stringify(results)));
-  });
-});
+    const updatedResults = results.map((tree) => ({
+      ...tree,
+      imageUrl: `/images/${tree.id}.jpg`,
+    }));
 
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    res.status(200).json(updatedResults);
+  });
 });

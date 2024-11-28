@@ -8,7 +8,7 @@ function ProductCard({ id, name, number, imageUrl, material, description, color,
         <div className={className}>
             {showNumber && <div className="number__txt">{number}</div>}
             <div className="element__img">
-                <img src={imageUrl} className="element__img" />
+                <img  className="element__img" />
             </div>
             <div className="element__txt">
                 <h2>{name}</h2>
@@ -28,7 +28,7 @@ function ProductCard({ id, name, number, imageUrl, material, description, color,
                 {showPrice && (
                     <div className="price__container">
                         <h3>Price:</h3>
-                        <p>{price} $</p>
+                        <p>$ {price}</p>
                     </div>
                 )}
                 <div className="el-button_container">
