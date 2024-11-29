@@ -28,7 +28,7 @@ function ProductCard({ id, name, number, imageUrl, material, description, color,
                 {showPrice && (
                     <div className="price__container">
                         <h3>Price:</h3>
-                        <p>{price}</p>
+                        <p>{price} $</p>
                     </div>
                 )}
                 <div className="el-button_container">
