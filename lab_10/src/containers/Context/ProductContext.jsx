@@ -59,7 +59,8 @@ export const ProductProvider = ({ children }) => {
                 : true;
             const isSearchMatch = product.name
                 .toLowerCase()
-                .includes(searchName.toLowerCase().trim());
+                .trim()
+                .includes(searchName.toLowerCase());
             return isMaterialMatch && isColorMatch && isPriceMatch && isSearchMatch;
         });
 
