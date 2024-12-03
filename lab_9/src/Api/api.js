@@ -24,6 +24,3 @@ export const getTrees = async (filters) => {
   console.log("API Response: ", response.data);
   return response.data;
 };
-
-
-
