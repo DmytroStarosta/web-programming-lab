@@ -1,11 +1,13 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { useNavigate, NavLink } from "react-router-dom";
-import "../forms/Checkout_styles.css"
+import "../forms/Checkout_styles.css";
 import ErrorComponent from "./ErrorComponent";
 
 const Checkout = () => {
+  const navigate = useNavigate();
+
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -35,6 +37,7 @@ const Checkout = () => {
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     setSubmitting(false);
     resetForm();
+    navigate("/success");
   };
 
   return (
@@ -44,11 +47,11 @@ const Checkout = () => {
         initialValues={initialValues}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
+        validateOnBlur={false}
+        validateOnChange={false}
       >
-        {({ errors, touched }) => (
+        {({ isValid, touched, errors, validateForm }) => (
           <Form className="checkout-form">
-
-
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="firstName">First Name:</label>
@@ -101,19 +104,23 @@ const Checkout = () => {
               />
             </div>
 
-
             <ErrorComponent errors={errors} />
+
+            <div className="cart__actions">
+              <NavLink to={"/cart"}>
+                <button type="button" className="cart__back">Go back</button>
+              </NavLink>
+              <button
+                type="submit"
+                className="cart__continue"
+                onClick={() => validateForm()}
+              >
+                Continue
+              </button>
+            </div>
           </Form>
         )}
       </Formik>
-      <div className="cart__actions">
-        <NavLink to={"/cart"}>
-          <button className="cart__back">Go back</button>
-        </NavLink>
-        <NavLink to={"/success"}>
-          <button className="cart__continue">Continue</button>
-        </NavLink>
-      </div>
     </div>
   );
 };
