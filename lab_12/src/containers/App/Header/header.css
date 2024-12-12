@@ -65,5 +65,21 @@ header {
 }
 
 .header__search-input::placeholder {
-    color: #555;
+    color: rgb(84, 84, 84);
 }
+
+.header__logout-button {
+    margin-left: auto;
+    padding: 10px 15px;
+    background-color: rgb(84, 84, 84);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header__logout-button:hover {
+    background-color: rgb(84, 84, 84);
+}
+

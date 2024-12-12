@@ -23,14 +23,13 @@ const LoginPage = () => {
         const hashedPassword = sha256(password).toString();
     
         if (email === storedEmail && hashedPassword === storedHashedPassword) {
-            localStorage.setItem("isAuthenticated", "true");
-            navigate("/dashboard");
+            localStorage.setItem("authToken", "true");
+            navigate("/");
         } else {
             setError("Invalid email or password.");
         }
     };
     
-
     return (
         <div className="container mt-5 d-flex justify-content-center align-items-center">
             <div className="w-50">

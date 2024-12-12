@@ -1,12 +1,17 @@
-import React, { useContext } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Logo from "../Logo";
-import "./header.css";
-import { ProductContext } from "../../Context/ProductContext";
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../Logo';
+import './header.css';
 
-function Header({ headerClass }) {
-    const location = useLocation();
-    
+const Header = ({ headerClass }) => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("userEmail");
+        localStorage.removeItem("password");
+        navigate("/login");
+    };
 
     return (
         <header className={headerClass}>
@@ -18,10 +23,14 @@ function Header({ headerClass }) {
                     <li><Link to="/cart" className="header__nav-link">Cart</Link></li>
                 </ul>
             </nav>
-            
-            
+            <button 
+                className="header__logout-button" 
+                onClick={handleLogout}
+            >
+                Logout
+            </button>
         </header>
     );
-}
+};
 
 export default Header;
